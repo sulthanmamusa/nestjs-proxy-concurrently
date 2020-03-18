@@ -1,0 +1,18 @@
+{
+    "routes": [
+      {
+        "route": "/webservice",
+        "address": "http://localhost:3001"
+      },{
+        "route": "/super-admin",
+        "address": "http://localhost:3002"
+      },{
+        "route": "/b2b",
+        "address": "http://localhost:3003"
+      },{
+        "route": "/b2c",
+        "address": "http://localhost:3004"
+      }
+    ]
+  }
+  

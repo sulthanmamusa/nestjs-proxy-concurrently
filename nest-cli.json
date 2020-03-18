@@ -1,0 +1,57 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/travelomatix-workspace/src",
+  "monorepo": true,
+  "root": "apps/travelomatix-workspace",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/travelomatix-workspace/tsconfig.app.json"
+  },
+  "projects": {
+    "travelomatix-workspace": {
+      "type": "application",
+      "root": "apps/travelomatix-workspace",
+      "entryFile": "main",
+      "sourceRoot": "apps/travelomatix-workspace/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/travelomatix-workspace/tsconfig.app.json"
+      }
+    },
+    "webservice": {
+      "type": "application",
+      "root": "apps/webservice",
+      "entryFile": "main",
+      "sourceRoot": "apps/webservice/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/webservice/tsconfig.app.json"
+      }
+    },
+    "super-admin": {
+      "type": "application",
+      "root": "apps/super-admin",
+      "entryFile": "main",
+      "sourceRoot": "apps/super-admin/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/super-admin/tsconfig.app.json"
+      }
+    },
+    "b2b": {
+      "type": "application",
+      "root": "apps/b2b",
+      "entryFile": "main",
+      "sourceRoot": "apps/b2b/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/b2b/tsconfig.app.json"
+      }
+    },
+    "b2c": {
+      "type": "application",
+      "root": "apps/b2c",
+      "entryFile": "main",
+      "sourceRoot": "apps/b2c/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/b2c/tsconfig.app.json"
+      }
+    }
+  }
+}
